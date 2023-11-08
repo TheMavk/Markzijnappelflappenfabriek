@@ -298,29 +298,28 @@ function carousel() {
   setTimeout(carousel, 4000);    
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
+function toggleMenu() {
   var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    // Voeg een event listener toe om te detecteren wanneer ergens anders wordt geklikt
-    document.addEventListener("click", closeMenu);
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    x.className = x.className.replace(" w3-show", "");
-    // Verwijder het event listener wanneer het menu wordt gesloten
-    document.removeEventListener("click", closeMenu);
+    x.style.display = "block";
   }
 }
 
-// Sluit het menu als er buiten wordt geklikt
-function closeMenu(event) {
+// Voeg een event listener toe voor het aanraakevenement
+document.getElementById("menuButton").addEventListener("touchstart", function (e) {
+  e.preventDefault(); // Voorkom standaard aanraakgedrag
+  toggleMenu();
+});
+
+// Voeg een event listener toe om het menu te sluiten als er ergens anders wordt geklikt
+document.addEventListener("touchstart", function (e) {
   var x = document.getElementById("navDemo");
-  if (event.target != x && !x.contains(event.target)) {
-    x.className = x.className.replace(" w3-show", "");
-    // Verwijder het event listener wanneer het menu wordt gesloten
-    document.removeEventListener("click", closeMenu);
+  if (x.style.display === "block" && e.target.id !== "menuButton" && !x.contains(e.target)) {
+    x.style.display = "none";
   }
-}
+});
 
 
 // When the user clicks anywhere outside of the modal, close it
