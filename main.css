@@ -1,0 +1,6 @@
+.veglolo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px; /* Voeg padding toe om de afbeelding van de rand weg te bewegen */
+}
