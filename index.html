@@ -303,16 +303,25 @@ function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+    // Voeg een event listener toe om te detecteren wanneer ergens anders wordt geklikt
+    document.addEventListener("click", closeMenu);
+  } else {
     x.className = x.className.replace(" w3-show", "");
+    // Verwijder het event listener wanneer het menu wordt gesloten
+    document.removeEventListener("click", closeMenu);
   }
 }
 
-// Voeg onderstaande code toe om aanraakevenementen te ondersteunen
-document.getElementById("navDemo").addEventListener("touchstart", function(e) {
-  myFunction();
-  e.stopPropagation(); // Voorkom dat het aanraakevenement doorgaat naar andere elementen
-});
+// Sluit het menu als er buiten wordt geklikt
+function closeMenu(event) {
+  var x = document.getElementById("navDemo");
+  if (event.target != x && !x.contains(event.target)) {
+    x.className = x.className.replace(" w3-show", "");
+    // Verwijder het event listener wanneer het menu wordt gesloten
+    document.removeEventListener("click", closeMenu);
+  }
+}
+
 
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
