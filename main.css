@@ -1,6 +1,8 @@
+/* Pas de afbeelding aan */
 .navbar-image {
-    width: auto; /* Pas de breedte automatisch aan de inhoud aan */
-    max-height: 100% !important; /* Zorg ervoor dat de afbeelding binnen de hoogte van de navbar blijft */
-    margin-right: 20px; /* Voeg een rechtermarge toe om de afbeelding van de rand weg te bewegen */
-    display: right; /* Zorgt ervoor dat de afbeelding naast de tekst wordt weergegeven */
+    max-height: 100%;
+    max-width: 100px; /* Stel een maximale breedte in (pas deze waarde naar wens aan) */
+    margin-left: auto; /* Plaats de afbeelding helemaal rechts */
+    display: block; /* Zorg ervoor dat de afbeelding een blokelement is, zodat deze niet naast andere elementen wordt weergegeven */
 }
+
