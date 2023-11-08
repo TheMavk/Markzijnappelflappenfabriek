@@ -2,5 +2,5 @@
     width: auto; /* Pas de breedte automatisch aan de inhoud aan */
     max-height: 100% !important; /* Zorg ervoor dat de afbeelding binnen de hoogte van de navbar blijft */
     margin-right: 20px; /* Voeg een rechtermarge toe om de afbeelding van de rand weg te bewegen */
-    display: inline-block; /* Zorgt ervoor dat de afbeelding naast de tekst wordt weergegeven */
+    display: right; /* Zorgt ervoor dat de afbeelding naast de tekst wordt weergegeven */
 }
