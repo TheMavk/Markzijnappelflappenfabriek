@@ -298,29 +298,15 @@ function carousel() {
   setTimeout(carousel, 4000);    
 }
 
-function toggleMenu() {
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
   var x = document.getElementById("navDemo");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
   }
 }
-
-// Voeg een event listener toe voor het aanraakevenement
-document.getElementById("menuButton").addEventListener("touchstart", function (e) {
-  e.preventDefault(); // Voorkom standaard aanraakgedrag
-  toggleMenu();
-});
-
-// Voeg een event listener toe om het menu te sluiten als er ergens anders wordt geklikt
-document.addEventListener("touchstart", function (e) {
-  var x = document.getElementById("navDemo");
-  if (x.style.display === "block" && e.target.id !== "menuButton" && !x.contains(e.target)) {
-    x.style.display = "none";
-  }
-});
-
 
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
