@@ -49,17 +49,28 @@ body {
   padding: 10px;
 }
 
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
+footer {
+ display: flex;
+ justify-content: space-around;
+ background-color: #333;
+ color: #fff;
+ padding: 20px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.footer-section {
+ flex: 1;
+ margin: 10px;
 }
+
+.social-media a {
+ margin: 0 10px;
+}
+
+.social-media img {
+ width: 30px;
+ height: 30px;
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
@@ -279,9 +290,25 @@ img {
       <div class="column" style="background-color:#ccc;">Column</div>
     </div>
   
-    <div class="footer">
-      <p>Footer</p>
-    </div>
+    <footer>
+      <div class="footer-section">
+        <h2>Over ons</h2>
+        <p>Hier komt een korte samenvatting van je bedrijf en visie.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Contact</h2>
+        <p>Hier kun je contactgegevens plaatsen, zoals een telefoonnummer en e-mailadres.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Social Media</h2>
+        <div class="social-media">
+          <a href="#"><img src="link-naar-je-facebook-icoon" alt="Facebook"></a>
+          <a href="#"><img src="link-naar-je-twitter-icoon" alt="Twitter"></a>
+          <a href="#"><img src="link-naar-je-instagram-icoon" alt="Instagram"></a>
+        </div>
+      </div>
+     </footer>
+     
 
 </body>
 </html>
