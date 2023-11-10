@@ -17,6 +17,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10px;
+    text-align: center;
+    color: white;
     flex-grow: 1;
   }
   
