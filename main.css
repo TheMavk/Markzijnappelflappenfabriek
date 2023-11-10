@@ -13,7 +13,7 @@
   
   /* Style the content */
   .content {
-    background-image: linear-gradient(to right, #333, #ffae00);
+    background-image: url(img/bade.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10px;
