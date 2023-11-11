@@ -110,9 +110,13 @@
 </html>
 
 <script>
-window.onload = function() {
- var x = document.getElementById("myTopnav");
- x.className += " responsive";
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
-
 </script>
