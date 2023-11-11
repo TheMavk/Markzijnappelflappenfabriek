@@ -22,16 +22,18 @@ nav{
   z-index: 99;
 }
 nav .navbar{
-  height: 100%;
-  max-width: 1250px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  /* background: red; */
-  padding: 0 50px;
+ height: 100%;
+ max-width: 1250px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin: auto;
+ /* background: red; */
+ padding: 0 50px;
+ /* overflow: hidden; Verwijder deze regel */
 }
+
 .navbar .logo a{
   font-size: 30px;
   color: #fff;
@@ -77,16 +79,18 @@ nav .navbar .links li .arrow{
   transition: all 0.3s ease;
 }
 nav .navbar .links li .sub-menu{
-  position: absolute;
-  top: 70px;
-  left: 0;
-  line-height: 40px;
-  background: #3E8DA8;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
-  display: none;
-  z-index: 2;
+ position: absolute;
+ top: 70px;
+ left: 0;
+ line-height: 40px;
+ background: #3E8DA8;
+ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+ border-radius: 0 0 4px 4px;
+ display: none;
+ z-index: 2;
+ overflow: hidden; /* Voeg deze regel toe */
 }
+
 nav .navbar .links li:hover .htmlCss-sub-menu,
 nav .navbar .links li:hover .js-sub-menu{
   display: block;
