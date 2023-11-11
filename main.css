@@ -182,10 +182,6 @@
    .topnav a:not(:first-child), .dropdown .dropbtn {
      display: none;
    }
-
-   .dropdown-content {
-    transition: max-height 0.3s ease;
-   }
    
    .topnav a.icon {
      float: right;
