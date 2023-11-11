@@ -385,29 +385,24 @@ searchBox.classList.replace("bx-x" ,"bx-search");
 }
 });
 
-// sidebar open close js code
-let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
 let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-menuOpenBtn.onclick = function() {
-navLinks.style.left = "0";
-}
-menuCloseBtn.onclick = function() {
-navLinks.style.left = "-100%";
-}
+let navLinks = document.querySelector(".nav-links");
 
+menuOpenBtn.onclick = function () {
+  navLinks.style.left = "0";
+};
 
-// sidebar submenu open close js code
-let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-htmlcssArrow.onclick = function() {
-navLinks.classList.toggle("show1");
-}
-let moreArrow = document.querySelector(".more-arrow");
-moreArrow.onclick = function() {
-navLinks.classList.toggle("show2");
-}
-let jsArrow = document.querySelector(".js-arrow");
-jsArrow.onclick = function() {
-navLinks.classList.toggle("show3");
-}
+menuCloseBtn.onclick = function () {
+  navLinks.style.left = "-100%";
+};
+
+// Voeg onderstaande code toe om de navLinks te sluiten bij een klik op een link
+let navLinksItems = document.querySelectorAll(".nav-links li a");
+navLinksItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    navLinks.style.left = "-100%";
+  });
+});
+
 </script>
