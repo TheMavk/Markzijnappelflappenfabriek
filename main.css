@@ -211,3 +211,15 @@
      text-align: left;
    }
   }
+
+  @media screen and (max-width: 600px) {
+    .topnav .nav-items, .topnav .hamburger-container {
+     float: none;
+     display: block;
+     text-align: center;
+    }
+    .topnav .nav-items a, .topnav .hamburger-container a {
+     display: block;
+    }
+   }
+   
