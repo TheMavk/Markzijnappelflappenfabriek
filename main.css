@@ -82,10 +82,7 @@
   
   @media (max-width: 600px) {
     /* Aanvullende stijlen voor kleinere schermen */
-    .topnav a {
-      float: none;
-      width: 100%;
-    }
+   
     .row {
       -webkit-flex-direction: column;
       flex-direction: column;
