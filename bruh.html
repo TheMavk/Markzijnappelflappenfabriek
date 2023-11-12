@@ -1,288 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Veglo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#"><img src="img/Veglologo.png" alt="Logo van Veglo" width="200" height="60"></a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" class="desktop-link">Features</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li><a href="#">Drop Menu 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
 
-<header>
-    <nav id="navbar">
-        <div class="menu">
+  <div class="content">
+    <h2>"Veglo Badminton: Sinds 1952, Een Slag boven de Rest in Omstreken Leiden!"</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique laudantium, cupiditate, error excepturi tempora incidunt deleniti illum dolores expedita mollitia aperiam corporis perspiciatis necessitatibus pariatur laborum? Temporibus vel fuga dolor?</p>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">Column</div>
+    <div class="column" style="background-color:#bbb;">Column</div>
+    <div class="column" style="background-color:#ccc;">Column</div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="footer-section column">
+        <h2>Over ons</h2>
+        <p>Hier komt een korte samenvatting..</p>
+      </div>
+      <div class="footer-section column">
+        <h2>Contact</h2>
+        <p>Hier kun je contactgegevens plaatsen, zoals een telefoonnummer en e-mailadres.</p>
+      </div>
+      <div class="footer-section column">
+        <h2>Social Media</h2>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <img src="img/Veglologo.png">
-        <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">What's New</a></li>
-            <li><a href="#">Categories</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="social-media">
-            <li><a href="#">
-                <i class="fab fa-facebook"></i>
-            </a></li>
-            <li><a href="#">
-                <i class="fab fa-instagram"></i>
-            </a></li>
-            <li><a href="#">
-                <i class="fab fa-twitter"></i>
-            </a></li>
-            <li><a href="#">
-                <i class="fab fa-youtube"></i>
-            </a></li>
-        </ul>
-        <form>
-            <div class="input-wrap">
-                <input
-                    type="search"
-                    placeholder="Search"
-                />
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </form>
+      </div>
     </div>
-</div>
-<div class="container">
-    <a href="#" class="brand">Navbar</a>
-    <div class="container-inner">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <form>
-            <div class="input-wrap">
-                <input
-                    type="search"
-                    placeholder="Search"
-                />
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </form>
-    </div>
-    <i class="fas fa-bars" id="menu-btn"></i>
-</div>
-</nav>
-</header>
-<main>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, odit error aut suscipit corporis maxime neque corrupti, iste, ipsa asperiores facere deleniti! Labore eaque autem quod expedita voluptatem ab facere.
-    </p>
-    <br/>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem magnam perferendis iste eum eligendi fugiat! Excepturi quae officiis, libero laborum placeat maxime omnis, enim inventore sed, vitae quam nobis iste!
-    </p>
-    <br>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem magnam perferendis iste eum eligendi fugiat! Excepturi quae officiis, libero laborum placeat maxime omnis, enim inventore sed, vitae quam nobis iste!
-    </p>
-    <br>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem magnam perferendis iste eum eligendi fugiat! Excepturi quae officiis, libero laborum placeat maxime omnis, enim inventore sed, vitae quam nobis iste!
-    </p>
-    <br>    
-</main>
-<style>
-   body{
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-   } 
+   </footer>
 
-   *{box-sizing: border-box;}
-
-   ul{
-    list-style-type: none;
-    padding: 0;
-   }
-
-   header{
-    min-height: 100vh;
-    background: url(img/bade.jpg) no-repeat center;
-    background-size: cover;
-   }
-
-   main{
-    padding: 2em;
-    background: #111;
-   }
-
-   main p{
-    font-size: 1.1em;
-    line-height: 27px;
-    color: #fff;
-   }
-
-   .container, .container-inner{
-    margin: 0 auto;
-    width: 100%;
-   }
-
-   .container{
-    max-width: 1350px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-   }
-
-   .container-inner{
-    max-width: 1000px;
-   }
-
-   nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2em;
-    z-index: 9;
-    transition: 0.7s;
-    color: #fff;
-   }
-
-   .brand{
-    font-size: 1.6em;
-   }
-
-   nav .container-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-   }
-
-   nav .container ul{
-    width: 100%;
-    margin: 0 1em;
-   }
-
-   nav .container ul:nth-child(2){
-    text-align: right;
-   }
-
-   nav .container ul li{
-    display: inline-block;
-    margin: 0 0.7em;
-   }
-
-   nav a{
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: 0.3s;
-    font-weight: 600;
-    color: #fff;
-   }
-
-   nav a:hover{
-    color: #e54416;
-   }
-
-   .input-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em 0;
-   }
-
-   form input, form button{
-    background: none;
-    border: none;
-    color: #fff;
-   }
-
-   form button{
-    cursor: pointer;
-   }
-
-   form input::placeholder{
-    color: #fff;
-   }
-
-   form input:focus{
-    outline: none;
-   }
-
-   nav .fa-bars{
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: right;
-   }
-
-   nav .fa-bars:hover{
-    color: #e54416;
-   }
-
-   menu{
-    background: #111;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.3em;
-    height: 0;
-    opacity: 0;
-    transition: 0.7s cubic-bezier(.74,-0.03,.83,.67);
-    overflow-y: hidden;
-   }
-
-   .logo{
-    width: 3em;
-   }
-
-   .menu ul, .menu form{
-    margin: 1em auto;
-   }
-
-   .menu li{
-    margin: 1em auto;
-   }
-
-   .menu > div{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    padding: 6em 1em 3em 1em;
-    height: 100%;
-    overflow-y: scroll;
-   }
-
-   .menu > div::-webkit-scrollbar{
-    display: none;
-   }
-
-   .menu .social-media{
-    margin: 2em 0;
-   }
-
-   .social-media li{
-    display: inline-block;
-    margin: 0 0.5em;
-   }
-
-   /*classes for javascript*/
-   .menu-open{
-    height: 100vh;
-    opacity: 1;
-   }
-
-   .navbar-active{
-    background: #111;
-    padding: 1em;
-   }
-</style>
+</body>
 </html>
+
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  background: #ffae00;
+  position: fixed;
+  width: 100%;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background: #323c4e;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #ffae00;
+  padding: 0 100px 0 15px;
+}
+.search-box input::placeholder{
+  color: #f2f2f2;
+}
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+  background: #ffae00;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+/* Dropdown Menu code start */
+.content .links ul{
+  position: absolute;
+  background: #ffae00;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #ffae00;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input{
+    padding-right: 30px;
+  }
+}
+
+.dummy-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.dummy-text h2{
+  font-size: 45px;
+  margin: 5px 0;
+}
+
+/* Style the content */
+.content {
+    background-image: url(img/bade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .header-container {
+   display: flex;
+   flex-direction: column;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color:	#ffae00;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+  }
+  
+  footer {
+   display: flex;
+   justify-content: space-around;
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+  }
+  
+  .footer-section {
+   flex: 1;
+   margin: 10px;
+  }
+  
+  .social-media a {
+   margin: 0 10px;
+   color: #ffae00;
+  }
+  
+  .social-media img {
+   width: 30px;
+   height: 30px;
+  }
+  
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* Aanvullende stijlen voor kleinere schermen */
+   
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .column {
+      width: 100%;
+    }
+  }
+</style>
+
