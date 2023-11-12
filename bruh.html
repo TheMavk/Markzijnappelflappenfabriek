@@ -60,12 +60,12 @@
     </nav>
   </div>
 
-
+<div class="main-content">
   <div class="dummy-text">
     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum mollitia consequatur deleniti repellendus ipsa consequuntur! Est molestias distinctio a dolorem. Laudantium labore magnam quia, modi minus esse tempora error.</h2>
     <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam aliquam voluptate veritatis fugiat veniam, cum perspiciatis, quo impedit sit neque omnis animi? Soluta officia doloribus ducimus qui nisi suscipit nam.</h2>
   </div>
-
+</div>
   <div class="row">
     <div class="column" style="background-color:#aaa;">Column</div>
     <div class="column" style="background-color:#bbb;">Column</div>
@@ -107,13 +107,17 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-  }
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+   flex-grow: 1;
+}
 
   /* Container for flexboxes */
   .row {
