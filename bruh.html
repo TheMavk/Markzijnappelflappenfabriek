@@ -65,8 +65,31 @@
     <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam aliquam voluptate veritatis fugiat veniam, cum perspiciatis, quo impedit sit neque omnis animi? Soluta officia doloribus ducimus qui nisi suscipit nam.</h2>
   </div>
 
-  <footer class="dummy-text">
-    <p>© 2023 Veglo. Alle rechten voorbehouden.</p>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">Column</div>
+    <div class="column" style="background-color:#bbb;">Column</div>
+    <div class="column" style="background-color:#ccc;">Column</div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="footer-section column">
+        <h2>Over ons</h2>
+        <p>Hier komt een korte samenvatting..</p>
+      </div>
+      <div class="footer-section column">
+        <h2>Contact</h2>
+        <p>Hier kun je contactgegevens plaatsen, zoals een telefoonnummer en e-mailadres.</p>
+      </div>
+      <div class="footer-section column">
+        <h2>Social Media</h2>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
    </footer>
 </body>
 </html>
@@ -81,12 +104,72 @@
   font-family: 'Poppins', sans-serif;
 }
 
-footer {
- background-color: #ffae00;
- color: white;
- text-align: center;
- padding: 10px;
-}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+  }
+  
+  footer {
+   display: flex;
+   justify-content: space-around;
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+  }
+  
+  .footer-section {
+   flex: 1;
+   margin: 10px;
+  }
+  
+  .social-media a {
+   margin: 0 10px;
+   color: #ffae00;
+  }
+  
+  .social-media img {
+   width: 30px;
+   height: 30px;
+  }
+  
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* Aanvullende stijlen voor kleinere schermen */
+   
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .column {
+      width: 100%;
+    }
+  }
 
 .wrapper{
   background: #ffae00;
