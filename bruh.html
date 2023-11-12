@@ -105,14 +105,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-
 .wrapper{
   background: #ffae00;
   position: fixed;
@@ -369,65 +361,5 @@ nav .content .links{
   font-size: 45px;
   margin: 5px 0;
 }
-
-/* Style the content */
-  
-  /* Container for flexboxes */
-  .row {
-    display: -webkit-flex;
-    display: flex;
-  }
-  
-  /* Create three equal columns that sits next to each other */
-  .column {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 10px;
-  }
-  
-  footer {
-   display: flex;
-   justify-content: space-around;
-   background-color: #333;
-   color: #fff;
-   padding: 10px;
-  }
-  
-  .footer-section {
-   flex: 1;
-   margin: 10px;
-  }
-  
-  .social-media a {
-   margin: 0 10px;
-   color: #ffae00;
-  }
-  
-  .social-media img {
-   width: 30px;
-   height: 30px;
-  }
-  
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .row {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    /* Aanvullende stijlen voor kleinere schermen */
-   
-    .row {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-    .column {
-      width: 100%;
-    }
-  }
 </style>
 
