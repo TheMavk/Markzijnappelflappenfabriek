@@ -63,8 +63,8 @@
           </li>
           <li>
             <a href="#" class="desktop-link">Jeugd</a>
-            <input type="checkbox" id="show-features">
-            <label for="show-features">Jeugd</label>
+            <input type="checkbox" id="show-jeugd">
+            <label for="show-jeugd">Jeugd</label>
             <ul>
               <li><a href="#">Training</a></li>
               <li><a href="#">Jeugdbegeleiders</a></li>
@@ -77,8 +77,8 @@
           <li><a href="#">Contact</a></li>
           <li>
             <a href="#" class="desktop-link">More</a>
-            <input type="checkbox" id="show-features">
-            <label for="show-features">More</label>
+            <input type="checkbox" id="show-more">
+            <label for="show-more">More</label>
             <ul>
               <li><a href="#">Leids Open</a></li>
               <li><a href="#">Zomerbadminton</a></li>
@@ -426,6 +426,8 @@ nav .content .links{
   .content .links #show-overons:checked ~ ul,
   .content .links #show-senioren:checked ~ ul,
   .content .links #show-lidmaatschap:checked ~ ul,
+  .content .links #show-jeugd:checked ~ ul,
+  .content .links #show-more:checked ~ ul,
   .content .links #show-items:checked ~ ul{
     max-height: 100vh;
   }
