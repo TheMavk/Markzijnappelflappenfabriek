@@ -113,59 +113,57 @@
         </div>
     </div>
     <div class="cards-container">
-        <div class="blog-card">
-            <div class="meta">
-                <div class="photo" style="background-image: url(img/veglobc.png)"></div>
-                <ul class="details">
-                    <li class="author"><a href="#">John Doe</a></li>
-                    <li class="date">Aug. 24, 2015</li>
-                    <li class="tags">
-                        <ul>
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Code</a></li>
-                            <li><a href="#">HTML</a></li>
-                            <li><a href="#">CSS</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="description">
-                <h1>Learning to Code</h1>
-                <h2>Opening a door to the future</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim
-                    dicta
-                    praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                <p class="read-more">
-                    <a href="#">Read More</a>
-                </p>
-            </div>
+    <div class="blog-card">
+        <div class="meta">
+            <div class="photo" style="background-image: url(img/veglobc.png)"></div>
+            <ul class="details">
+                <li class="author"><a href="#">John Doe</a></li>
+                <li class="date">Aug. 24, 2015</li>
+                <li class="tags">
+                    <ul>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <div class="blog-card alt">
-            <div class="meta">
-                <div class="photo" style="background-image: url(img/bk.png)"></div>
-                <ul class="details">
-                    <li class="author"><a href="#">Jane Doe</a></li>
-                    <li class="date">July. 15, 2015</li>
-                    <li class="tags">
-                        <ul>
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Code</a></li>
-                            <li><a href="#">JavaScript</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="description">
-                <h1>Mastering the Language</h1>
-                <h2>Java is not the same as JavaScript</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim
-                    dicta
-                    praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                <p class="read-more">
-                    <a href="#">Read More</a>
-                </p>
-            </div>
+        <div class="description">
+            <h1>Learning to Code</h1>
+            <h2>Opening a door to the future</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta
+                praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+            <p class="read-more">
+                <a href="#">Read More</a>
+            </p>
         </div>
+    </div>
+    <div class="blog-card alt">
+        <div class="meta">
+            <div class="photo" style="background-image: url(img/bk.png)"></div>
+            <ul class="details">
+                <li class="author"><a href="#">Jane Doe</a></li>
+                <li class="date">July. 15, 2015</li>
+                <li class="tags">
+                    <ul>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="description">
+            <h1>Mastering the Language</h1>
+            <h2>Java is not the same as JavaScript</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta
+                praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+            <p class="read-more">
+                <a href="#">Read More</a>
+            </p>
+        </div>
+    </div>
     </div>
     <ul class="cards">
         <li class="cards__item">
@@ -245,15 +243,15 @@
     }
 
     .cards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        background-color: #d5d6d8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #d5d6d8;
     }
 
     .blog-card {
         display: flex;
-        width: 100%;
+        width: calc(50% - 1rem);
         flex-direction: column;
         margin: 1rem auto;
         box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
@@ -420,34 +418,37 @@
     }
 
     @media (min-width: 640px) {
-    .blog-card {
-        width: calc(50% - 1rem);
+        .blog-card {
+            flex-direction: row;
+            max-width: 700px;
+        }
+
+        .blog-card .meta {
+            flex-basis: 40%;
+            height: auto;
+        }
+
+        .blog-card .description {
+            flex-basis: 60%;
+        }
+
+        .blog-card .description:before {
+            transform: skewX(-3deg);
+            content: "";
+            background: #fff;
+            width: 30px;
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .blog-card.alt {
+            flex-direction: row-reverse;
+        }
     }
 
-    .blog-card .meta {
-        height: auto;
-    }
-
-    .blog-card .description {
-        flex-basis: auto;
-    }
-
-    .blog-card .description:before {
-        transform: skewX(-3deg);
-        content: "";
-        background: #fff;
-        width: 30px;
-        position: absolute;
-        left: -10px;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-    }
-
-    .blog-card.alt {
-        flex-direction: column;
-    }
-}
     img {
         height: auto;
         max-width: 100%;
