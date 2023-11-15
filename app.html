@@ -112,6 +112,7 @@
             </h2>
         </div>
     </div>
+    <div class="cards-container">
     <div class="blog-card">
         <div class="meta">
             <div class="photo" style="background-image: url(img/veglobc.png)"></div>
@@ -203,6 +204,7 @@
         </li>
     </ul>
     </div>
+    </div>
 
 
     <footer>
@@ -240,8 +242,15 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
     .blog-card {
         display: flex;
+        width: calc(50% - 1rem);
         flex-direction: column;
         margin: 1rem auto;
         box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
