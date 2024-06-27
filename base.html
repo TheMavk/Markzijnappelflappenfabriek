@@ -15,85 +15,43 @@ body {font-family: "Lato", sans-serif}
 <body>
 
 <!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-orange w3-card">
-      <img src="img/Veglologo.png" alt="Logo van Veglo" style="float: left; margin-right: 30px; width: 150px; height: 45px;">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
-  
-      <!-- Menu-items met dropdowns -->
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="Over ons">Over ons<i class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button">Bestuur & Commissies</a>
-          <a href="#" class="w3-bar-item w3-button">Locatie & Speeltijden</a>
-          <a href="#" class="w3-bar-item w3-button">Sponsoring</a>
-          <a href="#" class="w3-bar-item w3-button">VOG</a>
-        </div>
-      </div>
-  
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="Lidmaatschap">Lidmaatschap<i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button">Lid worden</a>
-          <a href="#" class="w3-bar-item w3-button">Opzeggen</a>
-          <a href="#" class="w3-bar-item w3-button">Contributie</a>
-          <a href="#" class="w3-bar-item w3-button">Kennismaken</a>
-        </div>
-    </div>
-    <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="Senioren">Senioren<i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button">Competitie</a>
-          <a href="#" class="w3-bar-item w3-button">Teams</a>
-          <a href="#" class="w3-bar-item w3-button">Recreatief</a>
-          <a href="#" class="w3-bar-item w3-button">Training</a>
-          <a href="#" class="w3-bar-item w3-button">Vrij spelen</a>
-        </div>
-    </div>
-    <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="Jeugd">Jeugd<i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button">Trainingen</a>
-          <a href="#" class="w3-bar-item w3-button">Jeugdbegeleiders</a>
-          <a href="#" class="w3-bar-item w3-button">Jeugd Competitie</a>
-          <a href="#" class="w3-bar-item w3-button">Schoolsport</a>
-        </div>
-    </div>
-  
-      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Vrijwilligers</a>
-      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Agenda</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
-      
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">More<i class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button">Leids Open</a>
-          <a href="#" class="w3-bar-item w3-button">Zomerbadminton</a>
-          <a href="#" class="w3-bar-item w3-button">Oud nieuws</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Navbar op kleine schermen -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  
-    <!-- Herhaalde dropdowns hieronder kunnen verder worden geconsolideerd -->
-  
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Vrijwilligers</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Agenda</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
-    <div class="w3-dropdown-click">
-      <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Over ons</a>
-      <div class="w3-dropdown-content w3-bar-block">
-        <a href="#" class="w3-bar-item w3-button">Bestuur & Commissies</a>
-        <a href="#" class="w3-bar-item w3-button">Locatie & Speeltijden</a>
-        <a href="#" class="w3-bar-item w3-button">Sponsoring</a>
-        <a href="#" class="w3-bar-item w3-button">VOG</a>
-      </div>
-    </div>
-  </div>
+<!-- Nav -->
+<nav id="nav">
+  <ul>
+    <li class="current"><a href="index.html">Home</a></li>
+    <li>
+      <a href="#">Dropdown</a>
+      <ul>
+        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Magna veroeros</a></li>
+        <li><a href="#">Etiam nisl</a></li>
+        <li>
+          <a href="#">Sed consequat</a>
+          <ul>
+            <li><a href="#">Lorem dolor</a></li>
+            <li><a href="#">Amet consequat</a></li>
+            <li><a href="#">Magna phasellus</a></li>
+            <li><a href="#">Etiam nisl</a></li>
+            <li><a href="#">Sed feugiat</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Nisl tempus</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Dropdown</a>
+      <ul>
+        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Magna veroeros</a></li>
+        <li><a href="#">Etiam nisl</a></li>
+        <li><a href="#">Nisl tempus</a></li>
+      </ul>
+    </li>
+    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+    <li><a href="no-sidebar.html">No Sidebar</a></li>
+  </ul>
+</nav>
   
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px; background-image: url('img/bade.jpg'); background-size: cover; background-position: center;">
@@ -189,17 +147,106 @@ body {font-family: "Lato", sans-serif}
   <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
 </body>
 </html>
+<style>
+  #nav {
+		position: absolute;
+		display: block;
+		top: 2.5em;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+		#nav > ul {
+			display: inline-block;
+			border-radius: 0.35em;
+			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+			padding: 0 1.5em 0 1.5em;
+		}
+
+			#nav > ul > li {
+				display: inline-block;
+				text-align: center;
+				padding: 0 1.5em 0 1.5em;
+			}
+
+				#nav > ul > li > ul {
+					display: none;
+				}
+
+				#nav > ul > li > a, #nav > ul > li > span {
+					display: block;
+					color: #eee;
+					color: rgba(255, 255, 255, 0.75);
+					text-transform: uppercase;
+					text-decoration: none;
+					font-size: 0.7em;
+					letter-spacing: 0.25em;
+					height: 5em;
+					line-height: 5em;
+					-moz-transition: all .25s ease-in-out;
+					-webkit-transition: all .25s ease-in-out;
+					-o-transition: all .25s ease-in-out;
+					-ms-transition: all .25s ease-in-out;
+					transition: all .25s ease-in-out;
+					outline: 0;
+				}
+
+				#nav > ul > li:hover > a {
+					color: #fff;
+				}
+
+				#nav > ul > li.active > a, #nav > ul > li.active > span {
+					color: #fff;
+				}
+
+	.dropotron {
+		background: #222835 url("images/overlay.png");
+		background-color: rgba(44, 50, 63, 0.925);
+		padding: 1.25em 1em 1.25em 1em;
+		border-radius: 0.35em;
+		box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+		min-width: 12em;
+		text-align: left;
+		margin-top: -1.25em;
+		margin-left: -1px;
+		list-style: none;
+	}
+
+		.dropotron.level-0 {
+			margin-top: -1px;
+			margin-left: 0;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+
+		.dropotron a, .dropotron span {
+			-moz-transition: all .25s ease-in-out;
+			-webkit-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+			display: block;
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 0.7em;
+			letter-spacing: 0.25em;
+			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			line-height: 3em;
+		}
+
+		.dropotron li {
+			padding-left: 0;
+		}
+
+			.dropotron li:first-child a, .dropotron li:first-child span {
+				border-top: 0;
+			}
+
+			.dropotron li:hover > a, .dropotron li:hover > span {
+				color: #fff;
+			}
+  </style>
