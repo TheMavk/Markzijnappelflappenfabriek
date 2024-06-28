@@ -641,7 +641,7 @@ a {
 .footer {
   /* max-width: 1280px; */
   width: 100%;
-  background: #10182F;
+  background: var(--black-color);
 }
 .footer .footer-row {
   display: flex;
@@ -674,42 +674,13 @@ a {
   color: #bfbfbf;
   max-width: 300px;
 }
-.footer-col form {
-  display: flex;
-  gap: 5px;
-}
-.footer-col input {
-  height: 40px;
-  border-radius: 6px;
-  background: none;
-  width: 100%;
-  outline: none;
-  border: 1px solid #7489C6 ;
-  caret-color: #fff;
-  color: #fff;
-  padding-left: 10px;
-}
-.footer-col input::placeholder {
-  color: #ccc;
-}
- .footer-col form button {
-  background: #fff;
-  outline: none;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.2s ease;
-}
-.footer-col form button:hover {
-  background: #cecccc;
-}
+
 .footer-col .icons {
   display: flex;
   margin-top: 30px;
   gap: 30px;
   cursor: pointer;
+  font-size: 40px;
 }
 .footer-col .icons i {
   color: #afb6c7;
@@ -729,14 +700,5 @@ a {
   .footer .footer-row {
     padding: 20px;
     gap: 1rem;
-  }
-  .footer-col form {
-    display: block;
-  }
-  .footer-col form :where(input, button) {
-    width: 100%;
-  }
-  .footer-col form button {
-    margin: 10px 0 0 0;
   }
 }
